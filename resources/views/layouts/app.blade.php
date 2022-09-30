@@ -26,10 +26,11 @@
     </head>
     
     <section id="app-layout">
-    @include('includes.side-menu')
-    
-    @yield('content', 'Default content')
-  </section>
+       @include('includes.side-menu')
+       <section id="content-secion">
+       @yield('content', 'Default content')
+       </section>
+    </section>
   
     </body>
 </html>

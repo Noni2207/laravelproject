@@ -27,7 +27,7 @@
   align-self: flex-start;
   margin-bottom: 20px;
 }
-#app-layout .welcome-jumbo h1 {
+#app-layout.welcome-jumbo h1 {
   font-size: 4rem;
   font-weight: 900;
   align-self: flex-start;
