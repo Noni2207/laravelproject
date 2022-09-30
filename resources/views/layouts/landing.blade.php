@@ -26,7 +26,7 @@
     
     <section id="welcome">
     <div class="welcome-menu">
-      <div href="/" class="logo">
+      <div class="logo">
         <img src="https://webstockreview.net/images/clipart-restaurant-restaurant-logo-5.png">
       </div>
       <div class="menu">
