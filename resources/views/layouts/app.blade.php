@@ -25,7 +25,7 @@
         </style>
     </head>
     
-    <section id="welcome">
+    <section id="app-layout">
     @include('includes.side-menu')
     
     @yield('content', 'Default content')
