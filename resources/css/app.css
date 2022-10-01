@@ -317,3 +317,24 @@ h2 {
   font-weight: 700;
   margin-bottom: 3rem;
 }
+@media (min-width: 0px) and (max-width: 767px) {
+  #app-layout .side-menu {
+    display: none;
+  }
+  #app-layout .welcome-jumbo, #app-layout #content-section {
+    width: 100%;
+    max-width: 100vw;
+    padding: 20px;
+    transform: translate3d(0, 0, 0);
+  }
+  #information {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px auto;
+  }
+  #information .info {
+    padding: 20px;
+  }
+  #information .info .paragraphs {
+    grid-template-columns: 1fr;
+  }
+}
