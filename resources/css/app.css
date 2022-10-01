@@ -334,7 +334,47 @@ h2 {
   #information .info {
     padding: 20px;
   }
+  #information .info .about-link .span {
+    width: 60%;
+  }
   #information .info .paragraphs {
     grid-template-columns: 1fr;
   }
+  #food-preview {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+  }
+  #food-preview .container .left-btn {
+    left: -20px;
+  }
+  #food-preview .container .right-btn {
+    right: -20px;
+  }
+  #food-preview h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+  #food-preview .food-slider .slide {
+    width: 100%;
+  }
 }
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+  
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) { 
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+
+ }
