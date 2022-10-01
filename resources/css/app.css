@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import "bootstrap.rtl.min.css";
 @import "reset";
 @import "pages/about.css";
 @import "home";
@@ -6,7 +7,7 @@
 
 body {
   line-height: 1;
-  background: white;
+  background: red;
 }
 ol, ul {
   list-style: none;
