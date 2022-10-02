@@ -58,7 +58,7 @@
                 repellendus natus nihil?
               </p>
               <div class="food-image">
-                <img src="https://taco.sfo2.digitaloceanspaces.com/2019/04/CHIPS.png">
+                <img src="https://taco.sfo2.digitaloceanspaces.com/2019/04/CHIPS.png" >
               </div>
             </div>
 
