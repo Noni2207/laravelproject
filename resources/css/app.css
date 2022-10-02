@@ -36,6 +36,8 @@ body {
   background: white;
   padding: 50px;
   position: relative;
+  height: 100vh;
+  width: 300px;
 }
 #app-layout .side-menu .logo {
   display: flex;
@@ -103,11 +105,7 @@ body {
 }
 
 #app-layout .welcome-jumbo {
-  max-width: calc(100vw - 350px);
-  
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  max-width: calc(100vw - 300px);
   background: #ed4852;
   /* Old browsers */
   background: -moz-radial-gradient(center, ellipse cover, #ed4852 0%, #9c1b24 100%);
@@ -317,6 +315,7 @@ h2 {
   font-weight: 700;
   margin-bottom: 3rem;
 }
+
 @media (min-width: 0px) and (max-width: 767px) {
   #app-layout .side-menu {
     display: none;
@@ -346,6 +345,9 @@ h2 {
   #information .info .paragraphs {
     grid-template-columns: 1fr;
   }
+  #information .paragraphs {
+    font-size: 1rem;
+  }
   #food-preview {
     width: 100%;
     overflow: hidden;
@@ -357,6 +359,9 @@ h2 {
   #food-preview .container .right-btn {
     right: -20px;
   }
+  #food-preview .button-rounded {
+    margin-bottom: 2rem;
+  }
   #food-preview h1 {
     font-size: 2rem;
     line-height: 1.4;
@@ -365,8 +370,61 @@ h2 {
     width: 100%;
   }
 }
-// Medium devices (tablets, 768px and up)
+
 @media (min-width: 768px) and (max-width: 991px) {
+  #app-layout .side-menu {
+    display: none;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+  #app-layout .welcome-jumbo, #app-layout #content-section {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    transform: translate3d(0, 0, 0);
+    overflow: hidden;
+  }
+  #information {
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px auto;
+  }
+  #information .info {
+    padding: 20px;
+  }
+  #information .info .about-link .span {
+    width: 50%;
+  }
+  #information .info .paragraphs {
+    grid-template-columns: 50% 50%;
+  }
+  #information .paragraphs {
+    font-size: 2rem;
+  }
+  #food-preview {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+  }
+  #food-preview .container .left-btn {
+    left: -20px;
+  }
+  #food-preview .container .right-btn {
+    right: -20px;
+  }
+  #food-preview .button-rounded {
+    margin-bottom: 2rem;
+  }
+  #food-preview h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+  #food-preview .food-slider .slide {
+    width: 50%;
+  }
+
   
  }
 

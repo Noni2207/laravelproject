@@ -1,7 +1,7 @@
 
 #app-layout .welcome-jumbo {
   transform: translate3d(300px, 0, 0);
-  max-width: calc(100vw - 350px);
+  max-width: calc(100vw - 300px);
   display: flex;
   justify-content: center;
   align-items: center;
