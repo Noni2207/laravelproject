@@ -2,6 +2,7 @@
 @import "bootstrap.rtl.min.css";
 @import "reset";
 @import "pages/about.css";
+@import "pages/waitlist.css";
 @import "home";
 
 
@@ -444,7 +445,7 @@ h2 {
 
   
  }
- #about-page .content-box {
+.content-box {
   background: white;
   padding: 20px;
 }
