@@ -1,0 +1,108 @@
+
+#menu-page {
+    padding: 100px;
+  }
+  #menu-page, #food-preview {
+    padding: 0;
+    
+  }
+  #menu-page #food-preview .container .left-btn{
+      background: black;
+  }
+  #menu-page #food-preview .container .right-btn{
+      background: black;
+  }
+
+
+  
+  @media (min-width: 0px) and (max-width: 767px) {
+    #menu-page {
+      padding: 20px;
+    }
+    #menu-page p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+    }
+    #menu-page #food-preview h2  {
+      text-transform: uppercase;
+    }
+    #menu-page #food-preview .button-rounded  {
+      margin-bottom: 2rem;
+    }
+    #menu-page #food-preview .food-title {
+      font-size: 1.8rem;
+    }
+  
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    #menu-page {
+          padding: 20px;
+      }
+      #menu-page p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+      }
+      #menu-page #food-preview h2  {
+        text-transform: uppercase;
+      }
+      #menu-page #food-preview .button-rounded  {
+        margin-bottom: 2rem;
+      }
+      #menu-page #food-preview .food-title {
+        font-size: 1.8rem;
+      }
+  }
+  
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #menu-page  {
+      transform: translate3d(300px, 0, 0);
+      max-width: calc(100vw - 300px);
+      }
+      #menu-page {
+        padding: 20px;
+    }
+    #menu-page p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+    }
+    #menu-page #food-preview h2  {
+      text-transform: uppercase;
+    }
+    #menu-page #food-preview .button-rounded  {
+      margin-bottom: 2rem;
+    }
+    #menu-page #food-preview .food-title {
+      font-size: 1.8rem;
+    }  
+  }
+  
+  
+  
+  @media (min-width: 1200px) {
+    #menu-page  {
+      transform: translate3d(300px, 0, 0);
+      max-width: calc(100vw - 300px);
+    }
+    #menu-page {
+        padding: 20px;
+    }
+    #menu-page p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+    }
+    #menu-page #food-preview h2  {
+      text-transform: uppercase;
+    }
+    #menu-page #food-preview .button-rounded  {
+      margin-bottom: 2rem;
+    }
+    #menu-page #food-preview .food-title {
+      font-size: 1.8rem;
+    }
+  }
