@@ -1,0 +1,83 @@
+
+#offers-page {
+    padding: 100px;
+  }
+  #offers-page h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 2.5rem;
+  }
+  #offers-page p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  #offers-page form .form-group input{
+    padding: 10px !important;
+    border: 2px solid #9c1b24;
+    font-size: 1.3rem;
+    height: auto;
+  }
+  #offers-page form .form-group label{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 10px
+
+  }
+  #offers-page form .form-group select{
+    padding: 10px !important;
+    border: 2px solid #9c1b24;
+    font-size: 1.3rem;
+    height: auto;
+  }
+  #offers-page button{
+    margin: 10px 0px 10px 0px;
+    padding: 10px 20px ;
+    background: #9c1b24;
+    border: none;
+   
+  }
+
+  
+  
+  
+  @media (min-width: 0px) and (max-width: 767px) {
+    #offers-page {
+      padding: 20px;
+    }
+    #offers-page p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+    }
+    #offers-page h1 {
+      font-size: 2.5rem;
+    }
+  
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    #offers-page {
+          padding: 20px;
+      }
+  }
+  
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #offers-page  {
+      transform: translate3d(300px, 0, 0);
+      max-width: calc(100vw - 300px);
+      
+    }
+  }
+  
+  
+  
+  @media (min-width: 1200px) {
+    #offers-page  {
+      transform: translate3d(300px, 0, 0);
+      max-width: calc(100vw - 300px);
+      
+    }
+  }
