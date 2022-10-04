@@ -102,7 +102,7 @@
                 <img
                   src="https://pngriver.com/wp-content/uploads/2018/04/Download-Cupcake-PNG-Transparent-Image-420x190.png">
               </div>
-            </div>
+            </div> 
           </div>
           <div class="slide">
             <div class="background"></div>

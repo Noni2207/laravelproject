@@ -12,6 +12,10 @@
   #menu-page #food-preview .container .right-btn{
       background: black;
   }
+  #menu-page #food-preview .food-slider .slide:hover .background {
+    background: black;
+    transform: translate3d(0, -200px, 0);
+  }
 
 
   
@@ -33,6 +37,7 @@
     #menu-page #food-preview .food-title {
       font-size: 1.8rem;
     }
+   
   
   }
   

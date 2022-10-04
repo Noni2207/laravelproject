@@ -11,13 +11,13 @@
      <div class="col-md-6">
         <div class="form-group">
             <label for="firstinput">First Name</label>
-            <input type="text" class="form-control" name="fname" id="firstinput" placeholder="example John">
+            <input type="text" class="form-control" name="fname" id="firstinput" placeholder="example Jonny">
           </div>  
      </div>
      <div class="col-md-6">
         <div class="form-group">
             <label for="lastinput">Last Name</label>
-            <input type="text" class="form-control" name="lname" id="lastinput" placeholder="exsemple Deep">
+            <input type="text" class="form-control" name="lname" id="lastinput" placeholder="exsemple Depp">
           </div>
      </div>
  </div> 
