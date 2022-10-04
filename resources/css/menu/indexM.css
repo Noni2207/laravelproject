@@ -2,9 +2,12 @@
 #menu-page {
     padding: 100px;
   }
-  #menu-page, #food-preview {
+  #menu-page #food-preview {
     padding: 0;
-    
+    background: rgb(162,30,39);
+  }
+  #menu-page #food-preview h2 {
+    color: white;
   }
   #menu-page #food-preview .container .left-btn{
       background: black;
