@@ -19,8 +19,13 @@ Route::get('/', function () {
 Route::get('/admin', function () {
     return view('admin/dashboard');
 });
+
 Route::get('/admin/food-categories/', function () {
     return view('admin/food-categories/all');
+});
+
+Route::get('/admin/food-categories/create', function () {
+    return view('admin/food-categories/create');
 });
 
 Route::get('/admin/register', function () {
