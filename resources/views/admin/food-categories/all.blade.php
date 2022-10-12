@@ -49,7 +49,7 @@
                                                 <th scope="row">1</th>
                                                 <td>Burgers</td>
                                                 <td>2/2/2020</td>
-                                                <td><a href="/admin/food-categories/1/edit"><i class="far fa-edit"></i></a></td>
+                                                <td><a href="/admin/food-categories/edit"><i class="far fa-edit"></i></a></td>
                                                 <td><a href="/admin/food-categories/1/delete" onclick="if(!confirm('Are you sure you want delete category?')) {return false;}"><i class="far fa-trash-alt"></i></a></td>
                                             </tr>
                                         </tbody>
