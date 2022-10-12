@@ -12,10 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Homepage
-Route::get('/', function () {
-    return view('home');
-});
+// Static Pages
+
+Route::get('/', 'App\Http\Controllers\StaticPagesController@home'); //Home page
+Route::get('/menu', 'App\Http\Controllers\StaticPagesController@menu');
+Route::get('/menu/{slug}', 'App\Http\Controllers\StaticPagesController@singleMenu');
+Route::get('/about', 'App\Http\Controllers\StaticPagesController@about');
+Route::get('/waitlist', 'App\Http\Controllers\StaticPagesController@waitlist');
+Route::get('/offers', 'App\Http\Controllers\StaticPagesController@offers');
+
 
 // Admin Dashboard
 Route::get('/admin', function () {
@@ -36,13 +41,9 @@ Route::get('/admin/login', function () {
 });
 
 // Static Pages
-Route::get('/menu', function () {
-    return view('menu/index');
-});
-Route::get('/menu/{slug}', function () {
-    return view('menu/single-menu');
-});
 
+Route::get('/menu', 'App\Http\Controllers\StaticPagesController@menu');
+Route::get('/menu/{slug}', 'App\Http\Controllers\StaticPagesController@singleMenu');
 Route::get('/about', 'App\Http\Controllers\StaticPagesController@about');
 Route::get('/waitlist', 'App\Http\Controllers\StaticPagesController@waitlist');
 Route::get('/offers', 'App\Http\Controllers\StaticPagesController@offers');
