@@ -2,7 +2,7 @@
  
 @section('content')
 
-<!-- Food-Categories - create.blade.php -->
+<!-- Food-Items - create.blade.php -->
 
 <div class="container-fluid  dashboard-content">
                 <!-- ============================================================== -->
@@ -11,14 +11,14 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-header">
-                            <h2 class="pageheader-title">New Food Categories</h2>
-                            <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
+                            <h2 class="pageheader-title">New Food Items</h2>
+                            <p class="pageheader-text">Some text.</p>
                             <div class="page-breadcrumb">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Dashboard</a></li>
-                                        <li class="breadcrumb-item"><a href="/admin/food-categories" class="breadcrumb-link">All Food Categories</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">New Food Categories</li>
+                                        <li class="breadcrumb-item"><a href="/admin/food-items" class="breadcrumb-link">All Food Items</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">New Food Items</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -34,16 +34,20 @@
                         <!-- ============================================================== -->
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                             <div class="card">
-                                <h5 class="card-header">Create a new category</h5>
+                                <h5 class="card-header">Create a new Item</h5>
                                 <div class="card-body">
                                     <form action="#" id="basicform" data-parsley-validate="">
                                         <div class="form-group">
-                                            <label for="inputCategory">Category Name</label>
-                                            <input id="inputCategory" type="text" name="category" data-parsley-trigger="change" required="" placeholder="Enter category name" autocomplete="off" class="form-control">
+                                            <label for="inputItem">Item Name</label>
+                                            <input id="inputItem" type="text" name="price" data-parsley-trigger="change" required="" placeholder="Enter item name" autocomplete="off" class="form-control">
                                         </div>
                                         <div class="form-group">
-                                            <label for="inputCategoryImageUrl">Category Image Url</label>
-                                            <input id="inputCategoryImageUrl" type="text" name="ImageUrl" data-parsley-trigger="change" required="" placeholder="https://www.billys.com/img/burgers/jpg" autocomplete="off" class="form-control">
+                                            <label for="inputItem">Price</label>
+                                            <input id="inputItem" type="text" name="title" data-parsley-trigger="change" required="" placeholder="Enter item price" autocomplete="off" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputItemImageUrl">Item Image Url</label>
+                                            <input id="inputItemImageUrl" type="text" name="ImageUrl" data-parsley-trigger="change" required="" placeholder="https://www.billys.com/img/burgers/jpg" autocomplete="off" class="form-control">
                                         </div>
                                      
                                         <div class="row">

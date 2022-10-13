@@ -28,7 +28,12 @@ Route::get('/admin', 'App\Http\Controllers\admin\AdminController@dashboard');
 // Admin FoodCategories
 Route::get('/admin/food-categories', 'App\Http\Controllers\admin\FoodCategoriesController@index');
 Route::get('/admin/food-categories/create', 'App\Http\Controllers\admin\FoodCategoriesController@create');
-Route::get('/admin/food-categories/edit', 'App\Http\Controllers\admin\FoodCategoriesController@edit');
+Route::get('/admin/food-categories/{id}/edit', 'App\Http\Controllers\admin\FoodCategoriesController@edit');
+
+// Admin FoodItems
+Route::get('/admin/food-items', 'App\Http\Controllers\admin\FoodItemsController@index');
+Route::get('/admin/food-items/create', 'App\Http\Controllers\admin\FoodItemsController@create');
+Route::get('/admin/food-items/{id}/edit', 'App\Http\Controllers\admin\FoodItemsController@edit');
 
 // Admin Authentication  
 Route::get('/admin/register', function () {

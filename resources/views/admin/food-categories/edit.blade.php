@@ -2,6 +2,8 @@
  
 @section('content')
 
+<!-- Food-Categories - edit.blade.php -->
+
 <div class="container-fluid  dashboard-content">
                 <!-- ============================================================== -->
                 <!-- pageheader -->
