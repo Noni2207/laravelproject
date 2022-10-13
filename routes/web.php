@@ -23,9 +23,7 @@ Route::get('/offers', 'App\Http\Controllers\StaticPagesController@offers');
 
 
 // Admin Dashboard
-Route::get('/admin', function () {
-    return view('admin/dashboard');
-});
+Route::get('/admin', 'App\Http\Controllers\admin\AdminController@dashboard');
 
 // Admin FoodCategories
 Route::get('/admin/food-categories', 'App\Http\Controllers\admin\FoodCategoriesController@index');
@@ -40,12 +38,5 @@ Route::get('/admin/login', function () {
     return view('admin/login');
 });
 
-// Static Pages
-
-Route::get('/menu', 'App\Http\Controllers\StaticPagesController@menu');
-Route::get('/menu/{slug}', 'App\Http\Controllers\StaticPagesController@singleMenu');
-Route::get('/about', 'App\Http\Controllers\StaticPagesController@about');
-Route::get('/waitlist', 'App\Http\Controllers\StaticPagesController@waitlist');
-Route::get('/offers', 'App\Http\Controllers\StaticPagesController@offers');
 
 
