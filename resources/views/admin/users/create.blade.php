@@ -2,8 +2,8 @@
  
 @section('content')
 
-<!-- Food-Items - edit.blade.php -->
- 
+<!-- User - create.blade.php -->
+
 <div class="container-fluid  dashboard-content">
                 <!-- ============================================================== -->
                 <!-- pageheader -->
@@ -11,14 +11,14 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-header">
-                            <h2 class="pageheader-title">Edit Food Item</h2>
-                            <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
+                            <h2 class="pageheader-title">New User</h2>
+                            <p class="pageheader-text">Some text.</p>
                             <div class="page-breadcrumb">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="/admin" class="breadcrumb-link">Dashboard</a></li>
-                                        <li class="breadcrumb-item"><a href="/admin/food-items" class="breadcrumb-link">All Food Items</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Edit Food Item</li>
+                                        <li class="breadcrumb-item"><a href="/admin/users" class="breadcrumb-link">All User</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">New User</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -34,18 +34,32 @@
                         <!-- ============================================================== -->
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                             <div class="card">
-                                <h5 class="card-header">Edit this Item</h5>
+                                <h5 class="card-header">Create a new User</h5>
                                 <div class="card-body">
                                     <form action="#" id="basicform" data-parsley-validate="">
                                         <div class="form-group">
-                                            <label for="inputCategory">Item Name</label>
-                                            <input id="inputCategory" type="text" name="title" data-parsley-trigger="change" required="" placeholder="Enter Item name" autocomplete="off" class="form-control">
+                                            <label for="inputfirstname">First Name</label>
+                                            <input id="inputfirstname" type="text" name="fname" data-parsley-trigger="change" required="" placeholder="Enter first name" autocomplete="off" class="form-control">
                                         </div>
                                         <div class="form-group">
-                                            <label for="inputItemImageUrl">Item Image Url</label>
-                                            <input id="inputItemImageUrl" type="text" name="ImageUrl" data-parsley-trigger="change" required="" placeholder="https://www.billys.com/img/burgers/jpg" autocomplete="off" class="form-control">
+                                            <label for="inputlastname">Last Name</label>
+                                            <input id="inputlastname" type="text" name="lname" data-parsley-trigger="change" required="" placeholder="Enter last name" autocomplete="off" class="form-control">
                                         </div>
-                                     
+                                        <div class="form-group">
+                                            <label for="inputemail">Email</label>
+                                            <input id="inputemail" type="email" name="email" data-parsley-trigger="change" required="" placeholder="Enter email" autocomplete="off" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputpassword">Password</label>
+                                            <input id="inputpassword" type="password" name="password" data-parsley-trigger="change" required="" placeholder="Enter password" autocomplete="off" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="input-role">Role</label>
+                                                <select class="form-control" id="input-role">
+                                                    <option value="admin">Admin</option>
+                                                    <option value="employee">Employee</option>
+                                                </select>
+                                        </div>
                                         <div class="row">
                                             <div class="col-sm-6 pb-2 pb-sm-4 pb-lg-0 pr-0">
                                                 

@@ -36,6 +36,11 @@ Route::get('/admin/food-items', 'App\Http\Controllers\admin\FoodItemsController@
 Route::get('/admin/food-items/create', 'App\Http\Controllers\admin\FoodItemsController@create');
 Route::get('/admin/food-items/{id}/edit', 'App\Http\Controllers\admin\FoodItemsController@edit');
 
+// Admin Users
+Route::get('/admin/users', 'App\Http\Controllers\admin\UsersController@index');
+Route::get('/admin/users/create', 'App\Http\Controllers\admin\UsersController@create');
+Route::get('/admin/users/{id}/edit', 'App\Http\Controllers\admin\UsersController@edit');
+
 // Admin Customers
 Route::get('/admin/offers-members', 'App\Http\Controllers\admin\CustomersController@allOffersMembers');
 Route::get('/admin/reservation', 'App\Http\Controllers\admin\CustomersController@allReservation');
