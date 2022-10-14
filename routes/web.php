@@ -18,8 +18,9 @@ Route::get('/', 'App\Http\Controllers\StaticPagesController@home'); //Home page
 Route::get('/menu', 'App\Http\Controllers\StaticPagesController@menu');
 Route::get('/menu/{slug}', 'App\Http\Controllers\StaticPagesController@singleMenu');
 Route::get('/about', 'App\Http\Controllers\StaticPagesController@about');
-Route::get('/waitlist', 'App\Http\Controllers\StaticPagesController@waitlist');
+Route::get('/reservations', 'App\Http\Controllers\StaticPagesController@reservations');
 Route::get('/offers', 'App\Http\Controllers\StaticPagesController@offers');
+Route::get('/contact', 'App\Http\Controllers\StaticPagesController@contact');
 
 
 // Admin Dashboard
@@ -34,6 +35,11 @@ Route::get('/admin/food-categories/{id}/edit', 'App\Http\Controllers\admin\FoodC
 Route::get('/admin/food-items', 'App\Http\Controllers\admin\FoodItemsController@index');
 Route::get('/admin/food-items/create', 'App\Http\Controllers\admin\FoodItemsController@create');
 Route::get('/admin/food-items/{id}/edit', 'App\Http\Controllers\admin\FoodItemsController@edit');
+
+// Admin Customers
+Route::get('/admin/offers-members', 'App\Http\Controllers\admin\CustomersController@allOffersMembers');
+Route::get('/admin/reservation', 'App\Http\Controllers\admin\CustomersController@allReservation');
+
 
 // Admin Authentication  
 Route::get('/admin/register', function () {
