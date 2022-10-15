@@ -4,6 +4,7 @@
  
 @section('content')
 <section id="information">
+  <!-- Scripts -->
     <div class="restaurant-image">
       <img src="img/top-down.jpg">
     </div>
