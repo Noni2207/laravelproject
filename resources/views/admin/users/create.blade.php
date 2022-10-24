@@ -84,14 +84,13 @@
                                         <div class="form-group">
                                                 <label for="inputrole">Role</label>
                                                 <select name="role_id" class="form-control" id="inputrole">
-                                                @if ($role->title == Admin)
-                                                selected
-                                                @endif
                                                 @foreach ($roles as $role)
-                                                <option value="1" selected>{{$role->title}}</option>
+                                                <option value="{{$role->id}}" 
+                                                @if ($role->title == 'Admin')
+                                                 selected
+                                                @endif >{{$role->title}}
+                                                </option>
                                                 @endforeach
-                                                    <option value="1" selected>Admin</option>
-                                                    <option value="2">Employee</option>
                                                 </select>
                                         </div>
                                         <div class="row">
