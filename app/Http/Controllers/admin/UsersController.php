@@ -50,4 +50,24 @@ class UsersController extends Controller
             'roles' => $roles
         ]);
     }
+    public function update($id){
+        request()->validate([
+            'fname' => ['required', 'string', 'max:255'],
+            'lname' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255'],  //'unique:users'
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'role_id' => ['required']
+        ]);
+
+        $user = User::find($id);
+        $user->fname = request('fname');
+        $user->lname = request('lname');
+        $user->email = request('email');
+        $user->password = Hash::make(request('password'));
+        $user->save();
+        $user->roles()->syncWithoutDetaching([request('role_id')]);
+
+        return request();
+       
+    }
 }
