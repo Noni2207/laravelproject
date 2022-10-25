@@ -42,7 +42,12 @@ class UsersController extends Controller
         return redirect('/admin/users');
     }
     
-    public function edit(){
-        return view('admin/users/edit');
+    public function edit($id){
+        $user = User::find($id);
+        $roles = Role::All();
+        return view('admin/users/edit', [
+            'user' => $user,
+            'roles' => $roles
+        ]);
     }
 }

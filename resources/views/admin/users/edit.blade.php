@@ -36,34 +36,75 @@
                             <div class="card">
                                 <h5 class="card-header">Edit this User</h5>
                                 <div class="card-body">
-                                    <form action="#" id="basicform" data-parsley-validate="">
-                                        <div class="form-group">
-                                            <label for="inputCategory">User Name</label>
-                                            <input id="inputCategory" type="text" name="title" data-parsley-trigger="change" required="" placeholder="Enter User name" autocomplete="off" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="inputUserImageUrl">User Image Url</label>
-                                            <input id="inputUserImageUrl" type="text" name="ImageUrl" data-parsley-trigger="change" required="" placeholder="https://www.billys.com/img/burgers/jpg" autocomplete="off" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                                <label for="input-role">Role</label>
-                                                <select class="form-control" id="input-role">
-                                                    <option value="admin">Admin</option>
-                                                    <option value="employee">Employee</option>
-                                                </select>
-                                     
-                                        <div class="row">
-                                            <div class="col-sm-6 pb-2 pb-sm-4 pb-lg-0 pr-0">
-                                                
-                                            </div>
-                                            <div class="col-sm-6 pl-0">
-                                                <p class="text-right">
-                                                    <button type="submit" class="btn btn-space btn-primary">Submit</button>
-                                                   
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    <form method="POST" action="/admin/users">
+                                        @csrf
+                                       <div class="form-group">
+                                           <label for="inputfirstname">First Name</label>
+                                           <input id="inputfirstname" type="text" class="form-control form-control-lg @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname', $user->fname) }}" required autocomplete="name" autofocus placeholder="First Name">
+                                           @error('fname')
+                                             <span class="invalid-feedback" role="alert">
+                                             <strong>{{ $message }}</strong>
+                                             </span>
+                                           @enderror
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="inputlastname">Last Name</label>
+                                           <input id="inputlastname" type="text" class="form-control form-control-lg @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname', $user->lname) }}" required autocomplete="name" autofocus placeholder="Last Name">
+
+                                            @error('lname')
+                                              <span class="invalid-feedback" role="alert">
+                                              <strong>{{ $message }}</strong>
+                                              </span>
+                                            @enderror
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="inputemail">Email</label>
+                                           <input id="inputemail" type="email" class="form-control form-control-lg @error('email') is-invalid @enderror" name="email" value="{{ old('email', $user->email) }}" required autocomplete="email" placeholder="Email">
+
+                                             @error('email')
+                                               <span class="invalid-feedback" role="alert">
+                                               <strong>{{ $message }}</strong>
+                                               </span>
+                                             @enderror
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="inputpassword">Password</label>
+                                           <input id="inputpassword" type="password" class="form-control form-control-lg @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Password">
+
+                                             @error('password')
+                                                <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                                </span>
+                                              @enderror
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="inputpassword">Confirm Password</label>
+                                           <input id="inputpassword" type="password" class="form-control form-control-lg" name="password_confirmation" required autocomplete="new-password" placeholder="Confirm Password">
+                                       </div>
+                                       <div class="form-group">
+                                               <label for="inputrole">Role</label>
+                                               <select name="role_id" class="form-control" id="inputrole">
+                                               @foreach ($roles as $role)
+                                               <option value="{{$role->id}}" 
+                                               @if ($role->title == 'Employee')
+                                                selected
+                                               @endif >{{$role->title}}
+                                               </option>
+                                               @endforeach
+                                               </select>
+                                       </div>
+                                       <div class="row">
+                                           <div class="col-sm-6 pb-2 pb-sm-4 pb-lg-0 pr-0">
+                                               
+                                           </div>
+                                           <div class="col-sm-6 pl-0">
+                                               <p class="text-right">
+                                                   <button type="submit" class="btn btn-space btn-primary">Submit</button>
+                                                  
+                                               </p>
+                                           </div>
+                                       </div>
+                                   </form>
                                 </div>
                             </div>
                         </div>
