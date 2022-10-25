@@ -65,9 +65,9 @@ class UsersController extends Controller
         $user->email = request('email');
         $user->password = Hash::make(request('password'));
         $user->save();
-        $user->roles()->syncWithoutDetaching([request('role_id')]);
+        $user->roles()->sync([request('role_id')]);
 
-        return request();
+        return redirect('/admin/users');
        
     }
 }
