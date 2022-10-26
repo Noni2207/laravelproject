@@ -42,7 +42,8 @@ Route::get('/admin/users/create', 'App\Http\Controllers\admin\UsersController@cr
 Route::post('/admin/users', 'App\Http\Controllers\admin\UsersController@store');
 Route::get('/admin/users/{id}/edit', 'App\Http\Controllers\admin\UsersController@edit');
 Route::put('/admin/users/{id}', 'App\Http\Controllers\admin\UsersController@update');
-Route::get('/admin/users/{id}/delete', 'App\Http\Controllers\admin\UsersController@delete');
+//Route::get('/admin/users/{id}/delete', 'App\Http\Controllers\admin\UsersController@delete'); --GET request
+Route::delete('/admin/users/{id}/delete', 'App\Http\Controllers\admin\UsersController@delete');
 
 // Admin Customers
 Route::get('/admin/offers-members', 'App\Http\Controllers\admin\CustomersController@allOffersMembers');
