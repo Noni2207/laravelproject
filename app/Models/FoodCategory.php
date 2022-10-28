@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class FoodCategory extends Model
 {
-    use HasFactory;
+    protected $table = 'food_categories';
+    public function food_items(){
+        return $this->hasMany('App\FoodItem', 'category_id');
+     }
 }

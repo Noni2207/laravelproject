@@ -19,7 +19,13 @@ class CreateFoodItemsTable extends Migration
             $table->text('description');
             $table->text('image_url');
             $table->integer('price');
+            $table->bigInteger('category_id')->unsigned()->nullable();
             $table->timestamps();
+        });
+        Schema::table('food_items', function (Blueprint $table) {
+            $table->foreign('category_id')->references('id')->on('food_categories')->onDelete('set null');
+            
+ 
         });
     }
 
