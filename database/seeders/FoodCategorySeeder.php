@@ -14,6 +14,41 @@ class FoodCategorySeeder extends Seeder
      */
     public function run()
     {
-        //
+        \DB::table('food_categories')->insert([
+            'title' => 'starters',
+            'decsription' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis iste ab deleniti cupiditate architecto officia aspernatur nulla iusto delectus doloremque possimus recusandae, reiciendis aliquam vel voluptas repellendus natus nihil? ',
+            'image_url' => '/img/CHIPS.png',
+            'update_at' => Carbon::now(),
+            'created_at' => Carbon::now()
+        ]);
+    
+        \DB::table('food_categories')->insert([
+            'title' => 'burgers',
+            'decsription' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis iste ab deleniti cupiditate architecto officia aspernatur nulla iusto delectus doloremque possimus recusandae, reiciendis aliquam vel voluptas repellendus natus nihil? ',
+            'image_url' => '/images/hamburger-and-fries-png-4.png',
+            'update_at' => Carbon::now(),
+            'created_at' => Carbon::now()
+        ]);
+        \DB::table('food_categories')->insert([
+            'title' => 'entrees',
+            'decsription' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis iste ab deleniti cupiditate architecto officia aspernatur nulla iusto delectus doloremque possimus recusandae, reiciendis aliquam vel voluptas repellendus natus nihil? ',
+            'image_url' => '/png/full/342-3422633_pork-entrees-steak-pork-png.png',
+            'update_at' => Carbon::now(),
+            'created_at' => Carbon::now()
+        ]);
+        \DB::table('food_categories')->insert([
+            'title' => 'sides',
+            'decsription' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis iste ab deleniti cupiditate architecto officia aspernatur nulla iusto delectus doloremque possimus recusandae, reiciendis aliquam vel voluptas repellendus natus nihil? ',
+            'image_url' => 'https://pngriver.com/wp-content/uploads/2018/04/Download-Salad-Transparent-PNG.png',
+            'update_at' => Carbon::now(),
+            'created_at' => Carbon::now()
+        ]);
+        \DB::table('food_categories')->insert([
+            'title' => 'desert',
+            'decsription' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis iste ab deleniti cupiditate architecto officia aspernatur nulla iusto delectus doloremque possimus recusandae, reiciendis aliquam vel voluptas repellendus natus nihil? ',
+            'image_url' => '/wp-content/uploads/2018/04/Download-Cupcake-PNG-Transparent-Image-420x190.png',
+            'update_at' => Carbon::now(),
+            'created_at' => Carbon::now()
+        ]);
     }
 }
