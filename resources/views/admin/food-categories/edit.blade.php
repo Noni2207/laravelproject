@@ -49,16 +49,6 @@
                                            @enderror
                                        </div>
                                        <div class="form-group">
-                                           <label for="inputdescription">Description</label>
-                                           <textarea id="inputdescription" type="text" class="form-control form-control-lg @error('description') is-invalid @enderror" name="description" requiredautofocus placeholder="Description">{{ old('description', $category->description) }}</textarea>
-
-                                            @error('description')
-                                              <span class="invalid-feedback" role="alert">
-                                              <strong>{{ $message }}</strong>
-                                              </span>
-                                            @enderror
-                                       </div>
-                                       <div class="form-group">
                                         <label for="inputimageurl">Image Url</label>
                                         <input id="inputimageurl" type="text" class="form-control form-control-lg @error('image_url') is-invalid @enderror" name="image_url" value="{{ old('image_url', $category->image_url) }}" required autocomplete="title" autofocus placeholder="Add the url to the category image">
                                         @error('image_url')
@@ -67,6 +57,16 @@
                                           </span>
                                         @enderror
                                     </div>
+                                       <div class="form-group">
+                                           <label for="inputdescription">Description</label>
+                                           <textarea id="inputdescription" type="text" class="form-control form-control-lg @error('description') is-invalid @enderror" name="description" requiredautofocus placeholder="Write a Description">{{ old('description', $category->description) }}</textarea>
+
+                                            @error('description')
+                                              <span class="invalid-feedback" role="alert">
+                                              <strong>{{ $message }}</strong>
+                                              </span>
+                                            @enderror
+                                       </div>
                                        
                                        <div class="row">
                                            <div class="col-sm-6 pb-2 pb-sm-4 pb-lg-0 pr-0">
