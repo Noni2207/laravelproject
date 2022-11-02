@@ -29,13 +29,13 @@ class FoodItemsController extends Controller
       ]);
   }
   public function store(){
-      request()->validate([
-          'title' => ['required', 'string', 'max:255'],
-          'description' => ['required', 'string'],
-          'image_url' => ['required', 'string'],  
-          'price' => ['required', 'integer'],  
-          'category_id' => ['required', 'integer'],  
-      ]);
+    request()->validate([
+        'title' => ['required', 'string', 'max:255'],
+        'description' => ['required', 'string'],
+        'image_url' => ['string'],  
+        'price' => ['required', 'integer'],  
+        'category_id' => ['required', 'integer'],  
+    ]);
 
       $item = new FoodItem();
       $item->title = request('title');
@@ -60,7 +60,7 @@ class FoodItemsController extends Controller
     request()->validate([
         'title' => ['required', 'string', 'max:255'],
         'description' => ['required', 'string'],
-        'image_url' => ['required', 'string'],  
+        'image_url' => ['string'],  
         'price' => ['required', 'integer'],  
         'category_id' => ['required', 'integer'],  
     ]);
