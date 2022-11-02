@@ -88,7 +88,7 @@
                                                 <option value="{{$role->id}}" 
                                                 @if ($role->title == 'Admin')
                                                  selected
-                                                @endif >{{$role->title}}
+                                                @endif>{{$role->title}}
                                                 </option>
                                                 @endforeach
                                                 </select>
