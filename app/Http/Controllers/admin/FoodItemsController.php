@@ -26,6 +26,7 @@ class FoodItemsController extends Controller
       $categorise = FoodCategory::All();
       return view('admin/food-items/create', [
         'categories' => $categories
+        
       ]);
   }
   public function store(){
@@ -33,7 +34,7 @@ class FoodItemsController extends Controller
         'title' => ['required', 'string', 'max:255'],
         'description' => ['required', 'string'],
         'image_url' => ['string'],  
-        'price' => ['required', 'integer'],  
+        'price' => ['required'],  
         'category_id' => ['required', 'integer'],  
     ]);
 
@@ -61,7 +62,7 @@ class FoodItemsController extends Controller
         'title' => ['required', 'string', 'max:255'],
         'description' => ['required', 'string'],
         'image_url' => ['string'],  
-        'price' => ['required', 'integer'],  
+        'price' => ['required'],  
         'category_id' => ['required', 'integer'],  
     ]);
 
