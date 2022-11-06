@@ -38,7 +38,6 @@
                                 <div class="card-body">
                                 <form method="POST" action="/admin/food-items">
                                         @csrf
-                                        
                                        <div class="form-group">
                                            <label for="inputtitle">Title</label>
                                            <input id="inputtitle" type="text" class="form-control form-control-lg @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}" required autocomplete="title" autofocus placeholder="Give item a Title">
