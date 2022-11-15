@@ -53,7 +53,10 @@ Route::put('/admin/users/{id}', 'App\Http\Controllers\admin\UsersController@upda
 Route::delete('/admin/users/{id}/delete', 'App\Http\Controllers\admin\UsersController@delete');
 
 // Admin Customers
-Route::get('/admin/offers-members', 'App\Http\Controllers\admin\CustomersController@allOffersMembers');
+// Admin Members
+Route::get('/admin/members', 'App\Http\Controllers\admin\MemberController@index');
+
+// Admin Reservation
 Route::get('/admin/reservation', 'App\Http\Controllers\admin\CustomersController@allReservation');
 
 
