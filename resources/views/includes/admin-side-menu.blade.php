@@ -28,11 +28,11 @@
                                 <div id="submenu-2" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                     <li class="nav-item">
-                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-1" aria-controls="submenu-1-1">Food Categories</a>
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-1" aria-controls="submenu-1-1">Offer Members</a>
                                             <div id="submenu-1-1" class="collapse submenu" style="">
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="/admin/food-categories">All Food Categories
+                                                        <a class="nav-link" href="/admin/food-categories">All Offer Members
                                                              <span class="badge badge-secondary">New</span></a>
                                                     </li>
                                                     <li class="nav-item">
@@ -65,15 +65,32 @@
                                  data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-handshake"></i>Customers</a>
                                 <div id="submenu-3" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/admin/members">Offers Members
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3-1" aria-controls="submenu-3-1">Offer Members</a>
+                                            <div id="submenu-3-1" class="collapse submenu" style="">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                    <a class="nav-link" href="/admin/members">All Members
                                                 <span class="badge badge-secondary">New</span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/admin/reservation">Reservation
-                                                 <span class="badge badge-secondary">New</span></a>
-                                        </li>
-                                        
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>  
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3-2" aria-controls="submenu-3-2">Reservarion</a>
+                                            <div id="submenu-3-2" class="collapse submenu" style="">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                    <a class="nav-link" href="/admin/reservation">All Reservation
+                                                <span class="badge badge-secondary">New</span></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                    <a class="nav-link" href="/admin/reservation">New Reservation
+                                                <span class="badge badge-secondary">New</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>  
                                     </ul>
                                 </div>
                             </li>
