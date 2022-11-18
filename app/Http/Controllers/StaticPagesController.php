@@ -37,7 +37,7 @@ class StaticPagesController extends Controller
         return redirect('/offer/thank-you');
     }
     public function offersThankYou(){
-        return "Thank You";
+        return view('pages/thank-you');
     }
     public function contact(){
         return view('pages/contact');
