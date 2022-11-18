@@ -19,50 +19,10 @@ class MemberController extends Controller
             'members' => $members
         ]);
     }
-
-    public function create(){
-        return view('admin/food-members/create');
-    }
-    public function store(){
-        request()->validate([
-            'title' => ['required', 'string', 'max:255'],
-            'description' => ['required', 'string'],
-            'image_url' => ['required', 'string'],  //'unique:users'
-        ]);
-
-        $member = new Member();
-        $member->title = request('title');
-        $member->description = request('destripcion');
-        $member->image_url = request('image_url');
-        $member->save();
-        return redirect('/admin/food-members');
-    }
     
-    public function edit($id){
-        $member = Member::find($id);
-        return view('admin/food-members/edit', [
-            'category' => $member
-            
-        ]);
-    }
-    public function update($id){
-        request()->validate([
-            'title' => ['required', 'string', 'max:255'],
-            'description' => ['required', 'string'],
-            'image_url' => ['required', 'string'],  //'unique:users'
-        ]);
-
-        $member = Member::find($id);
-        $member->title = request('title');
-        $member->description = request('description');
-        $member->image_url = request('image_url');
-        $member->save();
-        return redirect('/admin/food-members');
-       
-    }
     public function delete($id){
         $member = Member::find($id);
         $member->delete();
-        return redirect('/admin/food-members');
+        return redirect('/admin/members');
     }
 }
