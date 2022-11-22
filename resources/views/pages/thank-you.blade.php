@@ -6,7 +6,7 @@
         <div class="row">
             <div class=".col-md-8 .offset-md-2 thank-you">
                <h1>Thank You !!!</h1>
-                 <p>You will be notifeid of all the special offers we have trought email</p>
+                 <p>We will get back to you.</p>
              </div>
         </div>
     </div>

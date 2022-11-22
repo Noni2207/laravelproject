@@ -19,10 +19,12 @@ Route::get('/menu', 'App\Http\Controllers\StaticPagesController@menu');
 Route::get('/menu/{slug}', 'App\Http\Controllers\StaticPagesController@singleMenu');
 Route::get('/about', 'App\Http\Controllers\StaticPagesController@about');
 Route::get('/reservations', 'App\Http\Controllers\StaticPagesController@reservations');
+Route::post('/reservations', 'App\Http\Controllers\StaticPagesController@saveReservation');
+Route::get('/reservations/thank-you', 'App\Http\Controllers\StaticPagesController@thankYou');
 Route::get('/contact', 'App\Http\Controllers\StaticPagesController@contact');
 Route::get('/offers', 'App\Http\Controllers\StaticPagesController@offers');
 Route::post('/offers', 'App\Http\Controllers\StaticPagesController@registerMember');
-Route::get('/offers/thank-you', 'App\Http\Controllers\StaticPagesController@offersThankYou');
+Route::get('/offers/thank-you', 'App\Http\Controllers\StaticPagesController@thankYou');
 
 
 // Admin Dashboard

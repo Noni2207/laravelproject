@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Reservation extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'fname',
+        'lname',
+        'email',
+        'phone_number',
+        'guest_total',
+        'time',
+    ];
 }
